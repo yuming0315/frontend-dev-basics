@@ -1,0 +1,14 @@
+body {
+	padding: 0;
+	margin: 10px;
+	font-size: 12px;
+	font-family: "맑은 고딕", 굴림, "돋움";
+	/* 중간에 띄워쓰기가 있으면 ""로 묶어줘야 한다 */
+	color: #333;
+}
+
+h1 {
+	size: 24px;
+	color: #06F;
+	font-family: '돋움';
+}
