@@ -1,35 +1,22 @@
-@charset "EUC-KR";
-
-* {
-	margin: 0;
-	padding: 0
-}
-
-body {
-	font-family: '∏º¿∫ ∞ÌµÒ' µ∏øÚ;
-	font-size: 0.75em;
-	color: #333
-}
-
-ul, ol, dl {
-	list-style-type: none
-}
-
+*			{ margin:0; padding:0 }
+body		{ font-family: 'ÎßëÏùÄ Í≥†Îîï' ÎèãÏõÄ; font-size:0.75em; color:#333 }
+ul, ol, dl	{ list-style-type: none }
+			
 .tab-box {
 	width: 520px;
 	margin: 100px auto;
 	
 }
 
-.tab-box ul{
+.tab-box ul {
 	height: 24px;
-	float: right;
 }
 
 .tab-box ul li {
-	float: left;
+	float: right;
+
 	width: 100px;
-	height:22px;
+	height: 22px;
 	margin-right: 2px;
 	
 	border:1px solid #999;
@@ -42,12 +29,17 @@ ul, ol, dl {
 	cursor: pointer;
 }
 
-.tab-box ul li.selected{
-	background-color: #f16;
+.tab-box ul li.selected {
+	background-color: #fc6;
 }
 
-.tab-box div{
+.tab-box div {
 	width: 516px;
-	height: 200px;
+	height: 200px; 
+	margin-top: -1px;
+	
+	text-align: center;
+	line-height: 200px;
+	
 	border: 1px solid #999;
 }

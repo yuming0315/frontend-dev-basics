@@ -1,19 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>테이블</title>
 <style type="text/css" media="screen">
-* {
-	margin: 0;
-	padding: 0
-}
-
-body {
-	font-family: '맑은 고딕' 돋움;
-	font-size: 0.75em;
-	color: #333
-}
+* { margin: 0;padding: 0 }
+body { font-family: '맑은 고딕' 돋움; font-size: 0.75em; color: #333 }
 
 .tbl-ex {
 	margin: 100px auto;
@@ -34,7 +26,8 @@ body {
 	background-color: #999;
 	color: #fff;
 	font-size: 1.1em;
-	border-width: 2px 0;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
 }
 
 .tbl-ex td {
@@ -42,12 +35,14 @@ body {
 	cursor: pointer;
 }
 
+.tbl-ex tr:hover td, .tbl-ex tr:nth-child(even):hover td {
+	background-color: #fc6;
+}	  
+
 .tbl-ex tr:nth-child(even) td {
 	background-color: #e8ecf6;
 }
-.tbl-ex tr:hover td .tbl-ex tr.even:hover td {
-	background-color: #fc6
-}
+
 </style>
 </head>
 <body>
