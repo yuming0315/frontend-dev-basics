@@ -24,6 +24,10 @@ console.log(a2, a2.length);
 var a3 = new Array(0, 2, 4, 6, 8);
 console.log(a3, a3.length);
 
+console.log("=== 배열 생성2: 리터럴을 사용하는 방법 ==========");
+var a4 = [];
+console.log(typeof a4, a4 instanceof Array, a4.length);
+
 // 배열 요소의 타입은 통일하지 않아도 된다.
 var a5 = [
   10,
