@@ -8,10 +8,18 @@ var myFucntion = function () {
 };
 
 // 생성자 함수(관례대로 대문자로 시작한다.)
-var MyObject = function (name, age) {
+var MyObj = function (name, age) {
+  this.name = name;
+  this.age = age;
+};
+
+var MyObject = (name, age) => {
   this.name = name;
   this.age = age;
 };
 
 var o = new MyObject("둘리", 10);
+console.log((a = MyObject("둘리", 10)));
+console.log(typeof (a = MyObject("둘리", 10)));
+console.log(o);
 console.log(typeof o);
