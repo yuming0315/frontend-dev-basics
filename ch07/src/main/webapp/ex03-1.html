@@ -4,8 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
 <script>
-$(function() {
+window.addEventListener('load', function(){
 	var $obj = $(".par");
+	
 	$obj.click(function(){
 		console.log("clicked:" + this);
 	});
@@ -21,8 +22,7 @@ $(function() {
 	
 	<p class='par'>문장1</p>
 	<p>문장2</p>
-	<p  class='par'>문장3</p>
+	<p class='par'>문장3</p>
 	<p>문장4</p>
 </body>
 </html>
- 
