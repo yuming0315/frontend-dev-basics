@@ -31,4 +31,10 @@ myObject.f2.call(yourObject, "hello");
 
 myObject.f2.call(yourObject, "hello", "again");
 
-// bind: 호출되기 전에 함수의 this
+// bind: 호출되기 전에 함수의 this를 파라미터로 전달된 객체로 세팅한다.
+
+var f3 = function () {
+  console.log(this.v);
+}.bind(myObject);
+
+f3();

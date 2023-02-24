@@ -4,16 +4,26 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-window.addEventListener("load",function(){
-	 document.getElementById('form-login').onclick = function(){
-		 var inputEmail = document.getElementById('input-email');
-		 if(inputEmail.value === ''){
-			 alert('이메일이 비어 있습니다.');
-			 console.log("......");
-			 return false;
-		 }
-		 return true;
-	 };
+window.addEventListener("load", function(){
+	document
+		.getElementById('form-login')
+		.onclick = function() {
+			var inputEmail = document.getElementById('input-email');
+			if(inputEmail.value === '') {
+				alert('이메일이 비어 있습니다.');
+				inputEmail.focus();
+				return false;
+			}
+
+			var inputPassword = document.getElementById('input-password');
+			if(inputPassword.value === '') {
+				alert('비밀번호가 비어 있습니다.');
+				inputPassword.focus();
+				return false;
+			}
+
+			return true;
+		};
 });
 </script>
 </head>

@@ -4,13 +4,12 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script>
-window.onload = function(){
-	setTimeout(function(){
+window.onload = function() {
+	setTimeout(function() {
 		var htmls = "<h3>Hello DOM</h3>";
-		document.body.innerHTML = htmls;
-	},2000);
+		document.body.innerHTML += htmls;
+	}, 2000);
 }
-
 </script>
 </head>
 <body>
