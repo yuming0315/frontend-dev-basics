@@ -6,6 +6,24 @@
 <script type="text/javascript">
 $(function() {
 	setTimeout(function(){
+		$("h2 a").attr("href","https://www.douzone.com");
+		$("h2 a").attr("target","_blank");	//이거 있으면 새창에서 띄움
+		$("h2 a").attr("title","우리회사 ....");
+		$("h2 a").css("font-size","0.75em");
+		
+		// 함수 체인
+		$("h2 a").attr("href","https://www.douzone.com")
+			.attr("target","_blank")	//이거 있으면 새창에서 띄움
+			.attr("title","우리회사 ....")
+			.css("font-size","0.75em");
+		
+		$("h2 a").attr({
+			href: "https://www.douzone.com",
+			target: "_blank",
+			title:"우리회사..."
+		})
+		.css("font-size","0.75em");
+		
 	}, 2000);
 });  
 </script>
