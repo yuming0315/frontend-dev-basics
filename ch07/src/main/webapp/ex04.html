@@ -4,10 +4,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
 <script>
-$(function(){
-	setTimeout(function(){
-	}, 2000);
-});
+	$(function() {
+		setTimeout(function() {
+			var $li = $("li");
+			$li.css("text-decoration", "underline");
+
+		}, 2000);
+	});
 </script>
 
 </head>

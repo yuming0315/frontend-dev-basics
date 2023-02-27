@@ -6,6 +6,10 @@
 <script>
 $(function(){
 	setTimeout(function(){
+		$("li[id]").css("color","red");//id있는것만
+		$('li[class="second"]').css("color","blue");//class가 second인것
+		$('li[class!="second"]').css("font-weight","bold");//second가 아닌것
+		
 	}, 1000);
 });
 </script>

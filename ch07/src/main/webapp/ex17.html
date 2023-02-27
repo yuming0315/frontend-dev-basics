@@ -4,10 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script type="text/javascript" src="jquery/jquery-3.6.0.js"></script>
 <script>
-$(function(){
-	setTimeout(function(){
-	}, 1000);
-});
+	$(function() {
+		setTimeout(function() {
+			$("#p1").text("1.안녕하세요");
+			$("#p2").text("<strong>2.안녕하세요</strong>");
+			console.log($("#p3").text());
+			console.log($("#p4").text());
+			
+		}, 1000);
+	});
 </script>
 </head>
 <body>
@@ -25,7 +30,8 @@ $(function(){
 		> -> &gt;
 		' -> &quot;
 	-->
+	&lt;strong&gt;	<!-- html안에서와 테그 안에서 &가 다름 -->
 	<h4>Back &amp; White</h4>
-	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that</h4>	
+	<h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;that</h4>
 </body>
 </html>
