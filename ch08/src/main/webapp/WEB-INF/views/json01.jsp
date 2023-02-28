@@ -10,7 +10,7 @@
 $(function(){
 	$("button").click(function(){
 		$.ajax({
-			url: "/ch08/api/json",
+			url: "${pageContext.request.contextPath }/api/json", //자바스크립트 코드에 el이 들어올 수 있음
 			async: true,
 			type: "get",
 			dataType: "json",
