@@ -3,7 +3,7 @@ var imageViewer = {
 		$(function() {
 			this._changeImage();
 			$('#btn-change').click(this._changeImage.bind(this));
-			$('#imgID').click(this._changeImage);
+			$('#imgID').click(this._changeImage.bind(this));
 			$('#btn-slideshow').click(this._controlinterval.bind(this));
 		}.bind(this));
 	},
@@ -22,16 +22,20 @@ var imageViewer = {
 	},
 	
 	_intervalId:null,
+	
 	_controlinterval: function() {
-		this._intervalId === null ?
-		this._setInterval() : this._removeInterval();
+		var _this = this;
+		_this._intervalId === null ?
+		_this._setInterval() : _this._removeInterval();
 	},
+	
 	_setInterval: function(){
 		this._intervalId = setInterval(function(){
-		this._changeImage();
+		$(imageViewer._changeImage());
 		}, 500);
 		$("#btn-slideshow").text("슬라이드쇼 중지");
 	},
+	
 	_removeInterval: function(){
 		clearInterval(this._intervalId);
 		$("#btn-slideshow").text("슬라이드쇼 시작");
