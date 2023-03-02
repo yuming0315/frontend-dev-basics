@@ -24,9 +24,8 @@ var imageViewer = {
 	_intervalId:null,
 	
 	_controlinterval: function() {
-		var _this = this;
-		_this._intervalId === null ?
-		_this._setInterval() : _this._removeInterval();
+		this._intervalId === null ?
+		this._setInterval() : this._removeInterval();
 	},
 	
 	_setInterval: function(){
